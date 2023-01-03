@@ -99,7 +99,7 @@ namespace BlogProject.API.Controllers
 
             if(existingPost != null)
             {
-               dbcontext.Posts.Remove(existingPost);
+                dbcontext.Posts.Remove(existingPost);
                 await dbcontext.SaveChangesAsync();
                 return Ok(existingPost);
             }
